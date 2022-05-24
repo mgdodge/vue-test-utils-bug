@@ -1,0 +1,13 @@
+diff --git a/node_modules/@vue/reactivity/dist/reactivity.d.ts b/node_modules/@vue/reactivity/dist/reactivity.d.ts
+index deb5b3e..6ce696e 100644
+--- a/node_modules/@vue/reactivity/dist/reactivity.d.ts
++++ b/node_modules/@vue/reactivity/dist/reactivity.d.ts
+@@ -23,7 +23,7 @@ declare class ComputedRefImpl<T> {
+     private _value;
+     readonly effect: ReactiveEffect<T>;
+     readonly __v_isRef = true;
+-    readonly [ReactiveFlags.IS_READONLY]: boolean;
++    // readonly [ReactiveFlags.IS_READONLY]: boolean;
+     _dirty: boolean;
+     _cacheable: boolean;
+     constructor(getter: ComputedGetter<T>, _setter: ComputedSetter<T>, isReadonly: boolean, isSSR: boolean);

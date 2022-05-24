@@ -1,0 +1,42 @@
+diff --git a/node_modules/@vue/runtime-core/dist/runtime-core.d.ts b/node_modules/@vue/runtime-core/dist/runtime-core.d.ts
+index 568e75f..300aca9 100644
+--- a/node_modules/@vue/runtime-core/dist/runtime-core.d.ts
++++ b/node_modules/@vue/runtime-core/dist/runtime-core.d.ts
+@@ -1217,8 +1217,8 @@ export declare function nextTick<T = void>(this: T, fn?: (this: T) => void): Pro
+ export { normalizeClass }
+ 
+ declare type NormalizedProp = null | (PropOptions & {
+-    [BooleanFlags.shouldCast]?: boolean;
+-    [BooleanFlags.shouldCastTrue]?: boolean;
++    // [BooleanFlags.shouldCast]?: boolean;
++    // [BooleanFlags.shouldCastTrue]?: boolean;
+ });
+ 
+ declare type NormalizedProps = Record<string, NormalizedProp>;
+@@ -1411,7 +1411,7 @@ export { ReactiveEffectOptions }
+ 
+ export { ReactiveEffectRunner }
+ 
+-export { ReactiveFlags }
++// export { ReactiveFlags }
+ 
+ export { readonly }
+ 
+@@ -1764,7 +1764,7 @@ export { ToRefs }
+ 
+ export { toRefs }
+ 
+-export { TrackOpTypes }
++// export { TrackOpTypes }
+ 
+ /**
+  * Internal API for registering an arguments transform for createVNode
+@@ -1793,7 +1793,7 @@ export declare interface TransitionState {
+     leavingVNodes: Map<any, Record<string, VNode>>;
+ }
+ 
+-export { TriggerOpTypes }
++// export { TriggerOpTypes }
+ 
+ export { triggerRef }
+ 
